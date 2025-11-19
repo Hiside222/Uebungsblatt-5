@@ -5,11 +5,9 @@ public class P3_main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[][] matrix = {
-						{ 1, 2, 3 }, 
-						{ 4, 5, 6 }, 
-						{ 7, 8, 9 } };
-		
+		int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+
+//		//a) 
 //		System.out.println("(a) Matrix +1:");
 //        for (int i = 0; i < matrix.length; i++) {
 //            for (int j = 0; j < matrix[i].length; j++) {
@@ -19,33 +17,33 @@ public class P3_main {
 //            System.out.println();
 //        }
 
-//        // (b) Summe aller Elemente ermitteln
+//        // (b) 
 //        int summe = 0;
-//        for (int[] row : matrix) {
-//            for (int value : row) {
-//                summe += value;
+//        for (int i = 0; i < matrix.length; i++) {
+//            for (int j = 0; j < matrix[i].length; j++) {
+//                summe += matrix[i][j];
 //            }
 //        }
 //        System.out.println("\n(b) Summe aller Elemente: " + summe);
 
-        // (c) Matrix um 90° im Uhrzeigersinn drehen
-        System.out.println("\n(c) Gedrehte Matrix (90° im Uhrzeigersinn):");
+		// (c) 
+		System.out.println("\n(c) Gedrehte Matrix (90° im Uhrzeigersinn):");
 
-        int[][] rotated = new int[3][3];
+		int[][] rotated = new int[3][3];
 
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                rotated[j][3 - 1 - i] = matrix[i][j];
-            }
-        }
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				rotated[j][2 - i] = matrix[i][j];
+			}
+		}
 
-        // Ausgabe der gedrehten Matrix
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(rotated[i][j] + " ");
-            }
-            System.out.println();
-        }
+		// Ausgabe der gedrehten Matrix
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				System.out.print(rotated[i][j] + " ");
+			}
+			System.out.println();
+		}
 	}
 
 }

@@ -18,9 +18,8 @@ public class H1_main {
 			links++;
 			rechts--;
 		}
-		System.out.println("Umgedreht:");
-		for (int n : myArray) {
-			System.out.print(n + " ");
-		}
+//		System.out.println("Umgedreht:");
+//		for (int n : myArray) {
+//			System.out.print(n + " ");
 	}
 }
